@@ -1,9 +1,10 @@
+/*
 div {
 	border: 1px solid grey;
 }
+*/
 
 header {
-	border: 1px solid grey;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
@@ -34,7 +35,6 @@ header {
 nav {
 	align-items: center;
 	padding-right: 30px;
-	border: 1px solid grey;
 }
 
 nav a {
@@ -46,11 +46,18 @@ main {
 	justify-content: space-around;
 }
 
+p {
+	font-family: Georgia;
+	font-size: 17px;
+	color: black;
+}
+
 .column.large {
 	display: flex;
 	width: 630px;
 	flex-wrap: wrap;
 	align-items: baseline;
+	justify-content: space-around;
 }
 
 .column.medium {
@@ -63,22 +70,31 @@ main {
 	display: flex;
 	width: 240px;
 	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .headline {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
   height: 240px;
   display: flex;
   align-items: center;
   padding: 30px;
 }
 
+.headline p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+
 .headline.first {
 	background-image: url("../images/story-main.png");
-	font-size: 40px;
+}
+
+.headline.first p {
+	font-size: 40px;	
 }
 
 .orca {
@@ -91,14 +107,37 @@ main {
 
 .headline.camera {
 	background-image: url("../images/camera.png");
-	width: 40%;
+	width: 38%;
+	margin: 5px;
 }
 
 .headline.earth {
 	background-image: url("../images/girl-tree.png");
-	width: 40%;
+	width: 38%;
+	margin: 5px;
 }
 
 .headline.cat {
 	background-image: url("../images/girl-cat.png");
+}
+
+.news {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.newslist {
+	background-color: WhiteSmoke;
+	display: flex;
+	flex-direction: column;
+}
+
+.newslist p {
+	padding-bottom: 15px;
+	padding-left: 10px;
+	background-color: WhiteSmoke;
+	font-family: Verdana;
+	font-size: 12px;
+	color: dimgrey;
+	border-bottom: 1px solid black;
 }
