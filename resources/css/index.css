@@ -3,8 +3,13 @@ div {
 	border: 1px solid grey;
 }
 */
-
+body{
+	margin-top: 0px;
+}
 header {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
@@ -13,6 +18,7 @@ header {
 	align-items: center;
 	border-bottom: 1px solid black;
 	margin-bottom: 30px;
+	background-color: white;
 }
 
 .cookie {
@@ -42,6 +48,7 @@ nav a {
 }
 
 main {
+	padding-top: 120px;
 	display: flex;
 	justify-content: space-around;
 }
