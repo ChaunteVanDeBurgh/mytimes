@@ -3,19 +3,27 @@ div {
 }
 
 header {
+	border: 1px solid grey;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	border-bottom: 1px solid black;
 	margin-bottom: 30px;
+}
+
+.cookie {
+	width: 100%;
+	height: auto;
 }
 
 .logo {
 	display: flex;
 	align-items: center;
 	color: aquamarine;
+	padding-left: 30px;
 }
 
 .logo p {
@@ -25,6 +33,8 @@ header {
 
 nav {
 	align-items: center;
+	padding-right: 30px;
+	border: 1px solid grey;
 }
 
 nav a {
@@ -40,6 +50,7 @@ main {
 	display: flex;
 	width: 630px;
 	flex-wrap: wrap;
+	align-items: baseline;
 }
 
 .column.medium {
@@ -52,4 +63,42 @@ main {
 	display: flex;
 	width: 240px;
 	flex-wrap: wrap;
+}
+
+.headline {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.headline.first {
+	background-image: url("../images/story-main.png");
+	font-size: 40px;
+}
+
+.orca {
+	width: 49%;
+}
+
+.burger {
+	width: 49%;
+}
+
+.headline.camera {
+	background-image: url("../images/camera.png");
+	width: 40%;
+}
+
+.headline.earth {
+	background-image: url("../images/girl-tree.png");
+	width: 40%;
+}
+
+.headline.cat {
+	background-image: url("../images/girl-cat.png");
 }
